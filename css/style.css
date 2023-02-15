@@ -1,0 +1,324 @@
+@import url(font-awesome.min.css);
+
+*{
+    margin: 0;
+}
+body{
+    font-family: "Raleway", helvetica,san-serif;
+    color: #444;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    background-image: url(../img/dark_tint.png) ,url(../img/bokeh_car_lights_bg.jpg); 
+    background-position: center center;
+    background-size: cover;
+}
+
+.top-menu{
+    
+    padding: 20px 30px;
+}
+.header h1{
+    float: left;
+}
+.nav{
+    text-align: right;
+}
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px;
+    font-size:18px;
+}
+.nav ul li button {
+    background-color: #fff;
+    border-radius: 12px;
+    padding:10px 20px;
+    border: none;
+    color: rgb(133, 128, 128);
+    transition: color .5s ease-out;
+    
+}
+.nav ul li a{
+    color: rgb(133, 128, 128);
+    transition: color 0.2s ease-in-out;
+}
+
+.nav ul li a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.nav ul li button:hover{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* top menu is done here. --------------- */
+
+.banner-content{
+    padding:155px 0;
+    
+    text-align: center;
+    line-height:70px;
+    color: #fff;
+    
+}
+.banner-title{
+    font-size:55px;
+    font-weight: bold;
+}
+.banner-body{
+    font-size:26px;
+}
+.banner-content > button{
+    padding: 14px 45px;
+    border: none;
+    background-color: #4ab1ff;
+    border-radius:22px;
+    background-color: #4ab1ff;
+    font-size:16px;
+}
+.banner-content > button:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ------------ header is done hear */
+
+
+.services{
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-top:80px;
+    line-height:50px;
+    border-bottom: 1px solid rgba(21, 59, 0, 0.247);
+}
+.services .container h2{
+    font-size:40px;
+}
+.services .container p{
+    font-size:26px;
+}
+.service-content{
+    width: 85%;
+    margin: 0 auto;
+}
+.service-content .box{
+    overflow: hidden;
+    width:calc(calc(100% / 3) - 82px); 
+    background-color:rgb(255, 255, 255);
+    float:left;
+    margin: 40px 10px;
+    padding:30px 30px 60px 30px;
+    border: 1px solid rgba(21, 59, 0, 0.199);
+    
+}
+
+.service-content h4{
+    margin: 15px 0 22px 0;
+    color: #858585;
+}
+
+.service-content .clearfix:after,.clearfix:before{
+    content:"";
+    display: table;
+}
+.service-content .clearfix:after{
+    clear: both;
+}
+.service-content .box p{
+    font-size: 16px;
+    line-height:25px;
+    
+}
+.service-content .box i{
+    padding: 45px 45px;
+    margin: 15px 0;
+}
+.icon::before{
+    font-family: fontawesome;
+    font-style: normal;
+}
+
+.color-blue{
+    background-color: #61b5fa;
+    color: #fff;
+}
+.color-green{
+    background-color: #6ffc80   ;
+    color: #fff;
+}
+.color-red{
+    background-color: #fa675a;
+    color: #fff;
+}
+.big-rounded{
+    font-size: 32px;
+    border-radius:100%;
+}
+@media only screen and (max-width:900px){
+    .service-content .box{
+        width: 100%;
+        padding: 20px 0;
+        margin: 10px 0;
+
+    }
+}
+/* ----------------- services is done hear */
+
+.about{
+    text-align: center;
+}
+.about-header{
+    padding: 80px 0;
+}
+.about-header h2{
+    font-size:40px;
+    color: #535353;
+    margin-bottom:10px;
+}
+.about-header p{
+    font-size:22px;
+}
+
+.about-content .container{
+    width: 85%;
+    margin: 0 auto;
+    border-top:1px solid #afafaf50;
+    border-bottom:1px solid #afafaf50;
+    padding: 60px 0;
+    margin-bottom:10px;
+    
+}
+
+ .about-content .container .box{
+     width: 25%;
+     float: left;
+     padding: 0;
+     
+ }
+ 
+
+ .about-content .clearfix:after,.clearfix:before{
+    content:"";
+    display: table;
+    
+}
+ .about-content .clearfix:after{
+    clear: both;
+}
+.about-content .container .box img{
+    
+    float: left;
+    border-radius:50%;
+    width: 100px;
+    margin-right: 10px;
+}
+.about-content .container .box h4{
+    text-align: left;
+    margin-top:28px;
+    line-height:25px;
+}
+.about-content .container .box p{
+    text-align: left;
+}
+@media only screen and (max-width: 900px){
+    .about-content .container .box{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+.about-footer{
+    width:55%;
+    text-align: center;
+    margin: 0 auto;
+    padding:70px 0;
+}
+.about-footer p{
+    line-height:25px;
+    margin-bottom: 35px;
+    color: rgba(68, 68, 68, 0.781);
+}
+.about-footer button{
+    border: none;
+    padding: 17px 43px;
+    font-size:20px;
+    color: #fff;
+    background-color: #3cadd4;
+    border-radius:30px;
+    cursor: pointer;
+    text-align: center;
+}
+.about-footer button:hover{
+    background-color: #49b1d4d8;
+    color: rgb(180, 180, 180);
+}
+
+/* ----------------- main is done hear */
+
+.footer{
+    background-color:#3cadd4;
+}
+
+.footer .footer-header{
+    text-align: center;
+    padding: 100px 0 50px 0;
+    color: #fff;
+}
+.footer .footer-header h4{
+    font-size:45px;
+    margin-bottom:15px;
+}
+.footer .footer-header p{
+    font-size:25px;
+}
+.footer-content {
+    padding-bottom: 100px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+.footer-content .form{
+    margin-bottom:22px;
+}
+
+.form input{
+    padding: 12px 81px 12px 10px;
+    margin: 0 8px;
+    border: none;
+    border-radius:5px;
+}
+.footer-content textarea{
+    width:93%;
+    height: 200px;
+    padding: 10px 0 0 10px;
+    border: none;
+    border-radius:5px;
+    margin-bottom:22px;
+}
+.footer-content button{
+    padding: 18px 55px;
+    border: none;
+    background-color: #383b43;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color .1s ease-out;
+}
+.footer-content button:hover{
+    background-color: #40444df6;
+}
+.form input:focus{
+    outline: none;
+    border-bottom: 1.5px solid #3a3a3a;
+}
+textarea:focus{
+    outline: none;
+    border: 1px solid #3a3a3a;
+}
